@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center"
+    android:background="@color/myBlue"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="600px"
+            android:layout_height="600px"
+            android:layout_marginBottom="55px"
+            android:background="@drawable/import_green">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="835px"
+            android:layout_height="wrap_content"
+            android:text="Image Saved!"
+            android:layout_marginLeft="35dp"
+            android:textSize="85px"
+            android:layout_marginTop="50px"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/product_sans_regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="835px"
+            android:layout_height="wrap_content"
+            android:text="Image successfully saved onto your Gallery!"
+            android:textAlignment="center"
+            android:layout_marginLeft="35dp"
+            android:textSize="37px"
+            android:layout_marginTop="50px"
+            android:textColor="@color/white"
+            android:fontFamily="@font/product_sans_regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="700px"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="156px"
+            android:layout_marginTop="135px"
+            android:background="@drawable/start_button2"
+            app:backgroundTint="@color/myGreen"
+            android:fontFamily="@font/product_sans_regular"
+            android:letterSpacing="-0.01"
+            android:text="Back to Import"
+            android:textAllCaps="false"
+            android:textColor="@color/myBlue"
+            android:textSize="64px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
